@@ -35,8 +35,10 @@ $(document).ready(function(){
       // instead of a settings object
     ],
 
-      prevArrow:"<button type='button' class='slider-btn  slider-btn--prev'></button>",
-      prevArrow:"<button type='button' class='slider-btn  slider-btn--next'></button>"
+      // prevArrow:"<button type='button' class='slider-btn  slider-btn--prev'></button>",
+      prevArrow:"<button class='slider-btn slider-btn--prev' type='button'></button>",
+      nextArrow:"<button class='slider-btn slider-btn--next' type='button'></button>"
+  
 
       
     
