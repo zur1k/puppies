@@ -101,7 +101,8 @@ body {
     .btn-light:hover {
       background-color: #f1cdb3;
       box-shadow: none;
-      color: #545454; }
+      color: #545454;
+      padding: 18px 45px 21px; }
   .btn-big {
     width: 267px;
     margin: 0 auto;
@@ -211,7 +212,7 @@ body {
     background-color: inherit;
     transition: box-shadow 0.5s; }
     .slider-item__box:hover {
-      box-shadow: 0 2px 20px 5px rgba(13, 13, 13, 0.04); }
+      box-shadow: 0 2px 30px 5px rgba(13, 13, 13, 0.04); }
   .slider-item__img {
     display: block; }
   .slider-item__name {
@@ -226,9 +227,11 @@ body {
     height: 48px;
     border-radius: 50%;
     border: 2px solid #f1cdb3;
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: center;
     transition: background-color 0.5s;
+    cursor: pointer;
     outline: none; }
     .slider-btn:hover {
       background-color: #f1cdb3; }
@@ -249,33 +252,39 @@ body {
   margin: 25px auto; }
 
 .help {
-  background-color: #fafafa; }
+  background-color: #fafafa;
+  padding-bottom: 50px; }
   .help-title {
     text-align: center;
     padding-top: 72px;
-    margin-bottom: 80px; }
+    margin-bottom: 50px; }
   .help-inner {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap; }
+  .help-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
   .help-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 80px; }
+    margin: 25px;
+    padding: 5px;
+    width: 180px; }
   .help-item__name {
     color: #545454;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 1.2px; }
   .help-item__img {
+    display: block;
     margin-bottom: 30px; }
   .help-box {
     margin: 0 auto;
     display: flex;
     justify-content: space-between; }
-  .help-box--short {
-    max-width: 900px; }
 
 .donate {
   background-color: #f6f6f6;

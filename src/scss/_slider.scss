@@ -19,7 +19,7 @@
     background-color: inherit;
     transition: box-shadow 0.5s;
     &:hover {
-      box-shadow: 0 2px 20px 5px rgba(13, 13, 13, 0.04);
+      box-shadow: 0 2px 30px 5px rgba(13, 13, 13, 0.04);
     }
   }
 
@@ -40,14 +40,15 @@
     height: 48px;
     border-radius: 50%;
     border: 2px solid #f1cdb3;
-    // background-color: #ffffff;
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: center;
     transition: background-color 0.5s;
-
+    cursor: pointer;
     outline: none;
     &:hover {
       background-color: #f1cdb3;
+      
     }
   }
   &-btn--prev {
