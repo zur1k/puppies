@@ -1,10 +1,16 @@
+// main menu 
 .nav {
-  max-width: 460px;
-  width: 100%;
+
+  width: 50%;
   background-color: transparent;
+  &.active {
+    display: block;
+  }
   &-menu {
     display: flex;
     justify-content: space-between;
+
+
   }
   &-menu__link {
     position: relative;
@@ -32,6 +38,80 @@
     }
   }
   & a {
-    display: inline-block;
+    display: block;
+  }
+}
+
+//  burger 
+.nav-toggle {
+  width: 30px;
+  padding: 10px 0;
+  position: absolute;
+  font-size: 0;
+  color: transparent;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+
+  top: 24px;
+  right: 24px;
+  z-index: 1;
+
+  &:focus {
+      outline: 0;
+  }
+
+  &__item {
+      display: block;
+      width: 100%;
+      height: 3px;
+
+      background: #fff;
+      position: absolute;
+
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      margin: auto;
+      transition: background .2s linear;
+  }
+
+  &.active &__item {
+      background: none;
+  }
+
+  &.active    
+  &__item::before {
+      transform-origin: left top;
+      transform: rotate(45deg) translate3d(0px, -3px, 0);
+  }
+
+  &.active
+  &__item::after {
+      transform-origin: left bottom;
+      transform: rotate(-45deg) translate3d(0px, 3px, 0);
+  }
+
+  &__item::after,
+  &__item::before {
+      content: "";
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      background: #fff;
+      z-index: 1;
+      left: 0;
+      transition: transform .2s linear;
+
+  }
+
+  &__item::after {
+      bottom: -8px;
+  }
+
+  &__item::before {
+      top: -8px;
   }
 }

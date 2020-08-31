@@ -13,14 +13,15 @@ $(document).ready(function(){
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true
+          dots: false
         }
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+          arrows:false
         }
       },
       {
@@ -51,6 +52,27 @@ $(document).ready(function(){
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 1000);
     });
+
+
+    
+    // menu
+
+
+    $("#nav-toggle").on("click", function(event) {
+      event.preventDefault();
+
+      $(this).toggleClass("active");
+      $("#nav").toggleClass("active");
+
+  }); 
+  $(".nav-menu__link").on("click", function(event) {
+      event.preventDefault();
+
+      $("#nav-toggle").toggleClass("active");
+      $("#nav").toggleClass("active");
+
+  }); 
+
   
 });
 
