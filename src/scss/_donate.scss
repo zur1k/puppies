@@ -1,0 +1,64 @@
+.donate {
+  background-color: #f6f6f6;
+  padding-top: 70px;
+  padding-bottom: 60px;
+  &-wrapper {
+    display: flex;
+  }
+  &-title {
+    margin-bottom: 30px;
+  }
+  &-img {
+    padding: 20px;
+    & img {
+      display: block;
+    }
+  }
+  &-content { 
+      padding-left: 20px;
+      padding-bottom: 20px;
+      margin-left: 20px;
+
+  }
+  &-content__subtitle {
+    @extend %gr-regular;
+    max-width: 312px;
+    color: #545454;
+    font-family: Georgia;
+    font-size: 15px;
+    letter-spacing: 0.9px;
+    margin-bottom: 13px;
+  }
+  &-content__card {
+    position: relative;
+    width: 321px;
+    border-radius: 9px;
+    background-color: $color-mod;
+    padding: 17px 15px 17px 57px;
+    margin-bottom: 33px;
+    ::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 24px;
+      top: 15px;
+      left: 15px;
+      background-image: url(../../images/min-img/card.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    & p {
+      color: #292929;
+      @extend %tnm-regular;
+      font-size: 20px;
+      letter-spacing: 1.2px;
+    }
+  }
+  &-content__text {
+    max-width: 350px;
+    color: #b2b2b2;
+    font-size: 12px;
+    line-height: 1.5;
+    @extend %ar-italic;
+  }
+}

@@ -1,0 +1,29 @@
+.about {
+  padding: 90px 0;
+  background-color: #fafafa;
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-img {
+    display: block;
+    margin-right: 30px;
+    width: auto;
+  }
+  &-content {
+    max-width: 415px;
+    padding: 0 30px;
+  }
+  &-title {
+    text-align: start;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  &-content__text {
+    color: #4c4c4c;
+    @extend %ar-regular;
+    font-size: 15px;
+    line-height: 1.3;
+  }
+}
