@@ -51,14 +51,15 @@
       
     }
   }
-  &-btn--prev {
+  &-btn--next
+   {
     right: -50px;
     top: 50%;
     transform: translateY(-50%);
     background-image: url(../../images/min-img/right-arrow.png);
 
   }
-  &-btn--next {
+  &-btn--prev{
     left: -50px;
     top: 50%;
     transform: translateY(-50%);

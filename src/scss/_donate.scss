@@ -9,9 +9,12 @@
     margin-bottom: 30px;
   }
   &-img {
+   
+   
     padding: 20px;
     & img {
-      display: block;
+      height: auto;
+      width: 100%;
     }
   }
   &-content { 
