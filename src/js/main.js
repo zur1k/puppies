@@ -13,6 +13,7 @@ $(document).ready(function () {
           slidesToScroll: 3,
           infinite: true,
           dots: false,
+          autoplay: true,
           arrows: false
         }
       },

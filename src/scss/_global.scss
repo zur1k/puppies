@@ -71,6 +71,7 @@ letter-spacing: 2.1px;
 }
 
 .btn {
+  display: inline-block;
   margin-top: 25px;
   margin-bottom: 25px;
   display: inline-block;
@@ -83,14 +84,14 @@ letter-spacing: 2.1px;
   letter-spacing: 1px;
   transition: background-color 0.3s;
   &:hover {
-    background-color: #ffffff; 
+    background-color: #fddcc4;
     border: 1px solid  $color-mod;;
     color: #545454;
     padding: 17px 44px 20px;
+    
   }
 
-  &-light {
-    width: 192px;
+  &-light {    
     display: block;
     border: 1px solid $color-mod;
     background-color: #fafafa;
@@ -102,9 +103,13 @@ letter-spacing: 2.1px;
     }
   }
   &-big {
-    width: 267px;
+   
     margin: 0 auto;
-    display: block;
+    display: inline-block;
     margin-top: 25px;
+    border: 1px solid $color-mod;
+    background-color: #fafafa;
+    padding: 17px 44px 20px;
+    
   }
 }

@@ -47,7 +47,9 @@
       background-size: contain;
       background-position: center;
       top: 0;
+      bottom: 0;
       left: 0;
+      margin: auto 0;
     }
   }
   &-contacts__item--email {
@@ -56,7 +58,8 @@
     &::before {
       width: 40px;
       height: 26px;
-      top: 10px;
+      top: 0;
+      bottom: 0;
       background-image: url(../../images/min-img/envelope.png);
     }
   }
@@ -65,7 +68,8 @@
     &::before {
       width: 40px;
       height: 26px;
-      top: 10px;
+      top: 0;
+      bottom: 0;
       background-image: url(../../images/min-img/telephone.png);
     }
   }
