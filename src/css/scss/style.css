@@ -202,6 +202,7 @@ body {
     top: -8px; }
 
 .hero {
+  position: relative;
   padding-top: 173px;
   background-image: url(../../images/bg/hero-bg.jpg);
   background-size: cover;
@@ -488,9 +489,22 @@ body {
     padding-bottom: 0;
     margin-left: 0; }
   .footer {
-    background-position-x: 70%; }
+    background-position-x: 70%;
+    position: relative; }
   .footer-wrapper {
-    justify-content: flex-start; } }
+    position: relative;
+    z-index: 3;
+    justify-content: flex-start; }
+  .footer::before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3); } }
 
 @media (max-width: 880px) {
   .container--mob {
@@ -499,7 +513,7 @@ body {
     background-color: #312928;
     padding: 10px 0 0;
     position: fixed;
-    z-index: 1001; }
+    z-index: 4; }
   .header-wrapper {
     display: block;
     padding-bottom: 10px; }
@@ -511,13 +525,27 @@ body {
     font-size: 11px; }
   .hero {
     background-position-x: 53%; }
+  .hero::before {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .hero-wrapper {
+    position: relative;
+    z-index: 3; }
   .hero__info {
     max-width: 45%; }
   .hero__title {
     font-size: 30px;
     padding-top: 75px; }
   .hero__text {
-    font-size: 12px; }
+    font-size: 12px;
+    color: #fff; }
   .nav {
     width: 100%;
     display: none; }
@@ -571,7 +599,6 @@ body {
     margin-bottom: 20px;
     text-align: center; }
   .donate-content__subtitle {
-    /* max-width: 312px; */
     font-size: 14px;
     text-align: center; }
   .donate-content__card {
@@ -586,8 +613,6 @@ body {
     padding-bottom: 0px;
     background-position-x: 75%; }
   .footer-wrapper {
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-left: 15px;
     flex-direction: column;
     padding-top: 0; }
   .footer-contacts {
@@ -619,10 +644,10 @@ body {
     width: 65%; }
   .slider-btn--prev {
     left: 0;
-    z-index: 1000; }
+    z-index: 1; }
   .slider-btn--next {
     right: 0;
-    z-index: 1000; }
+    z-index: 1; }
   .help-item {
     width: 45%;
     margin: 5px; }
@@ -633,8 +658,6 @@ body {
   .hero {
     padding-top: 0;
     background-position-x: 63%; }
-  .hero-wrapper {
-    background-color: rgba(0, 0, 0, 0.4); }
   .hero__info {
     max-width: 100%;
     text-align: center;

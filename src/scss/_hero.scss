@@ -1,9 +1,12 @@
 .hero {  
+  position: relative;
   padding-top: 173px;
   background-image: url(../../images/bg/hero-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  
+
   &__info {
     width: 100%;
     max-width: 445px;
